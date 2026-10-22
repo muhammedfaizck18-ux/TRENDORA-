@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URBAN WEAR | Men's Fashion</title>
+<style>
+:root{--ink:#191919;--muted:#6b6b6b;--cream:#f4f0e9;--line:#e6e0d7;--green:#1f6c43}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;border-bottom:1px solid var(--line);gap:18px}
+.logo{font-weight:900;letter-spacing:2px;font-size:22px}.logo span{display:block;font-size:10px;letter-spacing:4px;font-weight:500;margin-top:4px}
+nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-size:13px}
+.hero{background:var(--cream);padding:64px 6%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--muted)}
+h1{font-size:clamp(38px,6vw,70px);line-height:.98;margin:16px 0;letter-spacing:-2px}
+p{line-height:1.65;color:var(--muted)}.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:14px 22px;border-radius:3px;font-size:13px;font-weight:700;margin-top:12px}
+.hero-art{min-height:290px;background:linear-gradient(135deg,#d6c8b6,#8f8578);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-art:before{content:"URBAN";font-weight:900;font-size:clamp(48px,8vw,100px);letter-spacing:-5px;color:#ffffff66;transform:rotate(-90deg);position:absolute;left:-8px}
+.hero-card{background:#272725;color:white;padding:36px;text-align:center;max-width:220px;z-index:1;box-shadow:0 15px 35px #0002}
+.hero-card strong{font-size:24px;letter-spacing:3px}.hero-card small{display:block;margin-top:12px;letter-spacing:2px}
+section{padding:54px 6%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:24px}
+h2{font-size:30px;margin:8px 0}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{border:1px solid var(--line);padding:12px}.product-art{height:230px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:28px;letter-spacing:2px;color:#ffffffcc;background:linear-gradient(135deg,#242424,#65615c)}
+.product:nth-child(2) .product-art{background:linear-gradient(135deg,#cbbca8,#776b5e)}.product:nth-child(3) .product-art{background:linear-gradient(135deg,#243b55,#8292a1)}
+.product h3{margin:14px 0 5px;font-size:16px}.price{font-weight:800}.note{font-size:12px;color:var(--muted)}
+.order{background:#f3f6f1;text-align:center}.order p{max-width:570px;margin:10px auto}.wa{background:var(--green)}
+footer{padding:28px 6%;background:#191919;color:white;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}footer p{color:#c5c5c5;margin:5px 0}
+@media(max-width:700px){header{padding:16px 5%;align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}.hero{grid-template-columns:1fr;padding:44px 5%}.hero-art{min-height:230px}section{padding:42px 5%}.products{grid-template-columns:1fr 1fr}.product-art{height:170px}.section-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:420px){.products{grid-template-columns:1fr}.product-art{height:220px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">URBAN WEAR<span>MEN'S FASHION</span></div>
+  <nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Everyday style · Easy ordering</div>
+      <h1>MEN'S STYLE,<br>YOUR WAY.</h1>
+      <p>Discover everyday men's fashion at affordable prices. Choose your favourite style and message us on WhatsApp to check sizes, colours and availability.</p>
+      <a class="btn" href="#shop">EXPLORE COLLECTION</a>
+    </div>
+    <div class="hero-art"><div class="hero-card"><strong>URBAN<br>WEAR</strong><small>OWN YOUR STYLE</small></div></div>
+  </section>
+  <section id="shop">
+    <div class="section-head"><div><div class="eyebrow">Made for your everyday</div><h2>Featured Collection</h2></div><div class="note">Prices below are examples — replace with your actual prices.</div></div>
+    <div class="products">
+      <article class="product"><div class="product-art">T-SHIRT</div><h3>Oversized T-Shirt</h3><div class="price">₹499 <span class="note">sample</span></div><p class="note">Add available sizes and colours when you publish.</p><a class="btn order-link" data-product="Oversized T-Shirt" href="#">ORDER ON WHATSAPP</a></article>
+      <article class="product"><div class="product-art">CASUAL</div><h3>Casual Shirt</h3><div class="price">₹699 <span class="note">sample</span></div><p class="note">Add available sizes and colours when you publish.</p><a class="btn order-link" data-product="Casual Shirt" href="#">ORDER ON WHATSAPP</a></article>
+      <article class="product"><div class="product-art">DENIM</div><h3>Denim Jeans</h3><div class="price">₹999 <span class="note">sample</span></div><p class="note">Add available waist sizes and colours when you publish.</p><a class="btn order-link" data-product="Denim Jeans" href="#">ORDER ON WHATSAPP</a></article>
+    </div>
+  </section>
+  <section class="order" id="contact">
+    <div class="eyebrow">Need help choosing?</div><h2>Order with WhatsApp</h2>
+    <p>Tap below to ask about sizes, colours, stock, delivery charges and payment options. Your order is confirmed only after we reply.</p>
+    <a class="btn wa" id="main-wa" href="#">CHAT ON WHATSAPP</a>
+    <p class="note">Delivery time, shipping fees and return/exchange terms should be confirmed before ordering.</p>
+  </section>
+</main>
+<footer><div><strong>URBAN WEAR</strong><p>Men's fashion · Online store</p></div><div><p>WhatsApp: 7558858346</p><p>Replace sample prices and product details before sharing.</p></div></footer>
+<script>
+const phone = "917558858346";
+document.querySelectorAll(".order-link").forEach(a => {
+  const product = a.dataset.product;
+  const msg = `Hi, I'm interested in ordering ${product}. Please share available sizes, colours, final price and delivery details.`;
+  a.href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  a.target = "_blank"; a.rel = "noopener";
+});
+const mainMsg = "Hi, I'm interested in your men's clothing collection. Please share the available products, sizes, prices and delivery details.";
+const main = document.getElementById("main-wa");
+main.href = `https://wa.me/${phone}?text=${encodeURIComponent(mainMsg)}`;
+main.target = "_blank"; main.rel = "noopener";
+</script>
+</body>
+</html>
